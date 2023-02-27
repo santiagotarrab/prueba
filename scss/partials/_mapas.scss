@@ -1,0 +1,13 @@
+$coloresHeader:(
+        color1: rgba(18,154,50,1),
+        color2:rgb(94, 172, 42),
+        color3:rgb(60, 216, 13),
+        porc1:3%,
+        porc2:60%,
+        porc3:100%,
+        );
+    
+
+.prueba{
+        color:map-get($coloresHeader , color1 );
+}

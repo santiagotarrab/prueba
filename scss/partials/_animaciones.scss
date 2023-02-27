@@ -1,0 +1,35 @@
+/* ---------------------------
+MEDIA + TRANSITIONS
+---------------------------*/
+#prueba{
+    width: 60px;
+    height: 60px;
+    
+    &:hover{  
+        transform: scale(1,2);
+        transform: rotate(30deg) scale(2) translate(30px,-200px) ;
+        transition: all 1s linear;
+        animation-delay: 0.5s;
+    }
+
+    &:not(:hover){
+        transition: all 0.5s linear;
+        animation-name: movimiento;
+        animation-duration: 10s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: #45a049;
+    }
+    100%{
+        background-color: aqua;
+    }
+}

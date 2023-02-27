@@ -1,0 +1,95 @@
+/* ---------------------------
+PROYECTOS
+---------------------------*/
+
+#proyectos {
+    padding: 50px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "A A C"
+        "B D C"
+        "B E E";
+    gap: 10px;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: center;
+
+    @media($responsive_condition) {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "A A A"
+            "B B B"
+            "C C C"
+            "D D D"
+            "E E E"
+        ;
+    }
+
+    &>div{
+        position: relative;
+        background-size: cover;
+        @include flex(flex,column,center,center,nowrap);
+
+        background-repeat: no-repeat;
+        justify-items: center;
+        align-items: center;
+      
+        * {
+            visibility: hidden;
+            z-index: 2;
+        }
+
+        &:hover{
+            box-shadow: 1px 1px 3px 2px gray;
+            transition: all 0.1s linear;
+            * {
+                visibility: visible;
+            }
+            h1{
+                color: $color_marca_1;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+            }
+        }
+}
+}
+.proyectos{
+
+    &__grid-a {
+    grid-area: A;
+    background-image: url("../img/nosotros1.jpg");
+    }
+
+    &__grid-b {
+        grid-area: B;
+        background-image: url("../img/nosotros2.jpg");
+    }
+
+    &__grid-c {
+        grid-area: C;
+        background-image: url("../img/nosotros3.jpg");
+    }
+
+    &__grid-d {
+        grid-area: D;
+        background-image: url("../img/nosotros4.jpg");
+    }
+
+    &__grid-e {
+        grid-area: E;
+        background-image: url("../img/nosotros1.jpg");
+    }
+}
