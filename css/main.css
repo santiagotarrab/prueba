@@ -126,6 +126,11 @@ header ul li a {
   color: darkred !important;
 }
 
+header ul .navbar {
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
 header div.logo {
   width: 80px;
   height: 80px;
@@ -294,13 +299,13 @@ PRINCIPAL + CARROUSEL
 
 @media (max-width: 900px) {
   #carousel .textbanner .text {
-    font-size: 130%;
+    font-size: 180%;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   #carousel .textbanner .text {
-    font-size: 60%;
+    font-size: 100%;
   }
 }
 

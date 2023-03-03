@@ -68,6 +68,10 @@ header {
         color: $color_1 !important;
       }
     }
+
+    .navbar{
+      flex-wrap: nowrap !important;
+    }
   }
 
   div.logo {
@@ -211,11 +215,11 @@ $carousel-control-hover-opacity: 0.9;
       }
 
       @media (max-width: 900px) {
-        font-size: 130%;
+        font-size: 180%;
       }
 
-      @media (max-width: 450px) {
-        font-size: 60%;
+      @media (max-width: 550px) {
+        font-size: 100%;
       }
 
       .link {
