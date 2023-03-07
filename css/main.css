@@ -668,7 +668,7 @@ PRINCIPAL + CARROUSEL
 
 #productsOPPage .text p,
 #productsOPPage .text ul {
-  font-size: 100%;
+  font-size: 120%;
 }
 
 #productsOPPage .text h1,
@@ -676,7 +676,6 @@ PRINCIPAL + CARROUSEL
 #productsOPPage .text h3,
 #productsOPPage .text h4 {
   color: darkred;
-  font-size: 100%;
 }
 
 #productsOPPage .text li {

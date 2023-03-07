@@ -69,7 +69,7 @@ header {
       }
     }
 
-    .navbar{
+    .navbar {
       flex-wrap: nowrap !important;
     }
   }
@@ -84,18 +84,17 @@ header {
   }
 }
 
-.flag{
+.flag {
   justify-content: center;
   align-content: center;
   height: 30px;
   width: 30px;
   border-radius: 25px;
-  img{
+  img {
     max-width: 100%;
-    max-height: 100%
+    max-height: 100%;
   }
 }
-
 
 /*---------------------------
 PRINCIPAL + CARROUSEL
@@ -161,19 +160,17 @@ $carousel-control-hover-opacity: 0.9;
   }
 }
 
-#carousel2container{
+#carousel2container {
   display: flex;
   justify-content: center;
 }
 
-#carousel2{
+#carousel2 {
   width: 60%;
 
-  .carousel-inner{
-   
+  .carousel-inner {
   }
 }
-
 
 #carousel {
   width: 100%;
@@ -262,14 +259,12 @@ $carousel-control-hover-opacity: 0.9;
     width: 100%;
     justify-content: space-around;
 
-
-
     .card {
       border: 0px;
       border-bottom: 10px grey solid;
       width: 15%;
       @media (max-width: 600px) {
-        width: 100%;;
+        width: 100%;
         padding: 10px;
       }
       .number {
@@ -297,7 +292,7 @@ $carousel-control-hover-opacity: 0.9;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-border: none;
+  border: none;
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -322,18 +317,15 @@ border: none;
     // }
   }
   .map {
-    
     max-width: 100%;
-   
+
     width: 100%;
     background-image: url("../img/map.webp");
     background-repeat: no-repeat;
     background-size: cover;
     @media (min-width: 800px) {
       width: 70%;
-      
     }
-
 
     // min-height: 300px;
     aspect-ratio: 3 / 2;
@@ -498,14 +490,14 @@ border: none;
     padding: 50px;
     p,
     ul {
-      font-size: 100%;
+      font-size: 120%;
     }
     h1,
     h2,
     h3,
     h4 {
       color: $color_1;
-      font-size: 100%;
+     
     }
     li {
       font-weight: 900;
@@ -732,15 +724,13 @@ footer {
 
   .footer-container {
     width: 100%;
-   
   }
 
   div.footer-item {
-     display: flex;
+    display: flex;
     justify-content: space-around;
     width: 100%;
     color: white;
     height: 100px;
-
   }
 }
